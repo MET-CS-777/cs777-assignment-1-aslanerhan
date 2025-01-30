@@ -40,6 +40,7 @@ if __name__ == "__main__":
 
     output = counts.collect()
     print(output[:10])
+    print('new')
 
 
     sc.parallelize(output).coalesce(1).saveAsTextFile(sys.argv[2])
